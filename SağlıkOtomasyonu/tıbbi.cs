@@ -81,14 +81,14 @@ namespace SağlıkOtomasyonu
         {
             BindingSource bs = new BindingSource();
             bs.DataSource = dataGridtıbbi.DataSource;
-            bs.Filter = string.Format("CONVERT({0},System.String) LIKE '%{1}%' and CONVERT({2},System.String) LIKE '%{3}' ", dataGridtıbbi.Columns[0].DataPropertyName, tıbbiuruntxt.Text, dataGridtıbbi.Columns[5].DataPropertyName, isyeritxt.Text);
+            bs.Filter = string.Format("CONVERT({0},System.String) LIKE '%{1}%' and CONVERT({2},System.String) LIKE '%{3}' ", dataGridtıbbi.Columns[0].DataPropertyName, tıbbiuruntxt.Text, dataGridtıbbi.Columns[5].DataPropertyName);
         }
 
         private void isyeritxt_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
             bs.DataSource = dataGridtıbbi.DataSource;
-            bs.Filter = string.Format("CONVERT({0},System.String) LIKE '%{1}%' and CONVERT({2},System.String) LIKE '%{3}' ", dataGridtıbbi.Columns[0].DataPropertyName, tıbbiuruntxt.Text, dataGridtıbbi.Columns[5].DataPropertyName, isyeritxt.Text);
+            bs.Filter = string.Format("CONVERT({0},System.String) LIKE '%{1}%' and CONVERT({2},System.String) LIKE '%{3}' ", dataGridtıbbi.Columns[0].DataPropertyName, tıbbiuruntxt.Text, dataGridtıbbi.Columns[5].DataPropertyName);
         }
     }
     
